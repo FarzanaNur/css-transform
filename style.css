@@ -67,5 +67,18 @@ main{
     /* transform: scale(2, 3); */
     transform: scale(1.5, 1.5);
 }
-
+/* skew styling */
+.box4:hover{
+    background-color: #1cab9d59;
+    transform:skewX(30deg);
+}
+.box5:hover{
+    background-color: #1cab9d59;
+    transform:skewY(30deg);
+}
+.box6:hover{
+    background-color: #1cab9d59;
+    transform:skew(30deg); 
+    /* if the 2nd value is not assigned it will only work on x axis */
+}
 

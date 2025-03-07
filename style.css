@@ -36,7 +36,7 @@ main{
     /* border: 2px solid black; */
     text-decoration: none;
 }
-.scale,.skew{
+.scale,.skew,.translate{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +46,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
     margin: 10px 50px;
     height: 200px;
     width: 200px;
@@ -80,5 +81,38 @@ main{
     background-color: #1cab9d59;
     transform:skew(30deg); 
     /* if the 2nd value is not assigned it will only work on x axis */
+}
+
+/* translate */
+.translate{
+    border-radius: 10px;
+    display: grid;
+    /* gap: 10px; */
+    margin: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid teal;
+}
+.box7,.box8,.box9,.box10{
+    /* margin: 30; */
+    padding: 20;
+    border:2px solid red;
+    height: 100px;width:100px
+}
+.box7:hover{
+    background-color: #1cab9d59;
+    transform: translate(60px, 40px);
+}
+.box8:hover{
+    background-color: #1cab9d59;
+    transform: translate(-60px, -40px);
+}
+.box9:hover{
+    background-color: #1cab9d59;
+    transform: translate(60px, -40px);
+}
+.box10:hover{
+    background-color: #1cab9d59;
+    transform: translate(-60px, -40px);
 }
 

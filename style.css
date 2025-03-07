@@ -49,7 +49,7 @@ header,footer{
     border: 2px solid rgba(3, 150, 164, 0.312);
     border-radius: 5px;
 }
-.scale,.skew,.translate{
+.scale,.skew,.translate,.rotate{
     background-color: #1c80ab59;
     line-height: 150px;
 }
@@ -94,4 +94,15 @@ header,footer{
 .box:hover .translate-xy{
     transform: translate(60px, 40px);
     transform: translate(2,2);
+}
+
+/* rotate */
+.box:hover .rotate-x{
+    transform: rotateX(40deg);
+}
+.box:hover .rotate-y{
+    transform: rotateY(-40deg);
+}
+.box:hover .rotate-xy{
+    transform: rotate(40deg)
 }

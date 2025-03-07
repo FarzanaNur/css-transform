@@ -1,24 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    transition: transform 0.5s ease;
 }
 :root{
     --hf-bg:#023f37;
-    --b-bg:#023f3728;
+    --b-bg:#bbd8d428;
     --sec-heading:rgb(1, 88, 88);
     --text-primary:beige;
 }
+
 header,footer{
     padding: 20px;
     text-align: center;
     color: var(--text-primary);
     background-color: var(--hf-bg);
 }
-main{
-    /* height: 80vh; */
-}
-.transform{
-    margin: 20px;
+.transform-container{
+    margin: 50px ;
     border: 2px solid teal;
     background-color: var(--b-bg);
     border-radius: 10px;
@@ -28,91 +27,41 @@ main{
     color: var(--sec-heading);
     text-align: center;
     text-decoration: underline;
+    /* border: 2px solid teal; */
 }
 .section-desc{
-    /* text-align: justify; */
     padding: 10px 40px;
-    font-size: 1.5em;
-    /* border: 2px solid black; */
+    font-size: 1.2em;
     text-decoration: none;
 }
-.scale,.skew,.translate{
+.flex{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    margin: 30px 0px;
 }
 .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 70px 40px 30px;
+    width: 150px;
+    height: 150px;
     text-transform: capitalize;
-    margin: 10px 50px;
-    height: 200px;
-    width: 200px;
+    text-align: center;
+    background-color: #7b838260;
     border: 2px solid rgba(3, 150, 164, 0.312);
-    border-radius: 10px;
-    background-color: rgb(173, 199, 222);
+    border-radius: 5px;
 }
-.box1:hover{
-    background-color: #1cab9d59;
-    transform: scaleX(1.2);
+.scale{
+    background-color: #1c80ab59;
+    line-height: 150px;
 }
-.box2:hover{
-    background-color: #1cab9d59;
-    transform: scaleY(1.2);
+.box:hover .scale-x{
+    transform: scaleX(2);
 }
-.box3:hover{
-    background-color: #1cab9d59;
-    /* transform: scale(1.5); */
+.box:hover .scale-y{
+    /* transform: scaleY(.5); */
+    transform: scaleY(2);
+}
+.box:hover .scale-xy{
+    transform: scale(2);
     /* transform: scale(2, 3); */
-    transform: scale(1.5, 1.5);
+    /* transform: scale(1.5, 1.5); */
 }
-/* skew styling */
-.box4:hover{
-    background-color: #1cab9d59;
-    transform:skewX(30deg);
-}
-.box5:hover{
-    background-color: #1cab9d59;
-    transform:skewY(30deg);
-}
-.box6:hover{
-    background-color: #1cab9d59;
-    transform:skew(30deg); 
-    /* if the 2nd value is not assigned it will only work on x axis */
-}
-
-/* translate */
-.translate{
-    border-radius: 10px;
-    display: grid;
-    /* gap: 10px; */
-    margin: 10px;
-    padding: 20px;
-    grid-template-columns: repeat(2,1fr);
-    border: 2px solid teal;
-}
-.box7,.box8,.box9,.box10{
-    /* margin: 30; */
-    padding: 20;
-    border:2px solid red;
-    height: 100px;width:100px
-}
-.box7:hover{
-    background-color: #1cab9d59;
-    transform: translate(60px, 40px);
-}
-.box8:hover{
-    background-color: #1cab9d59;
-    transform: translate(-60px, -40px);
-}
-.box9:hover{
-    background-color: #1cab9d59;
-    transform: translate(60px, -40px);
-}
-.box10:hover{
-    background-color: #1cab9d59;
-    transform: translate(-60px, -40px);
-}
-

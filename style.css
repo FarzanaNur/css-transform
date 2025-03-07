@@ -99,10 +99,15 @@ header,footer{
 /* rotate */
 .box:hover .rotate-x{
     transform: rotateX(40deg);
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
+
 }
 .box:hover .rotate-y{
-    transform: rotateY(-40deg);
+    transform: rotateY(-40deg);  
+    transform: perspective(500px) scaleZ(2) rotateY(45deg);
+
 }
 .box:hover .rotate-xy{
-    transform: rotate(40deg)
+    transform: rotate(40deg);
+    transform: rotate(270deg)
 }

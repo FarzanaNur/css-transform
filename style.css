@@ -16,6 +16,11 @@ header,footer{
     color: var(--text-primary);
     background-color: var(--hf-bg);
 }
+header h1 a{
+    color: beige;
+    font-size: .4em;
+    text-decoration: none;
+}
 .transform-container{
     margin: 50px ;
     border: 2px solid teal;

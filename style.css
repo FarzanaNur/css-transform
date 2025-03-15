@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    transition: transform 0.5s ease;
+    transition: transform .5s ease;
 }
 :root{
     --hf-bg:#023f37;
@@ -9,7 +9,10 @@
     --sec-heading:rgb(1, 88, 88);
     --text-primary:beige;
 }
-
+h1{
+    text-align: center;
+    color: antiquewhite;
+}
 header,footer{
     padding: 20px;
     text-align: center;
@@ -123,4 +126,52 @@ header h1 a{
 .box:hover .matrix-3d{
     transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1);
 
+}
+
+/* transition page */
+.transition{
+    color: #b7f2ea;
+    text-transform: capitalize;
+}
+.transition-body{
+    /* height: 80vh; */
+    background-color: #b7f2ea;
+    display: flex;
+    justify-content: center;
+}
+.transition-container{
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    background-color: var(--b-bg);
+    border: 2px solid #023f37;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.transition-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+    border: 2px solid #023f37;
+}
+.transition-box1{
+    background-color: #02043f;
+    /* transform: translateX(-40%); */
+}
+
+.transition{
+    transition-property: all;
+    /* transition-property: color,transform; */
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: .2s;
+
+    /* transition: all 3s ease .2s; */
+}
+.transition-box1:hover {
+    background-color: #1e5c54;
+    transform: translateX(-40%);
+    border-radius: 20px;
 }

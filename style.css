@@ -63,13 +63,17 @@ header h1 a{
 }
 .box:hover .scale-x{
     transform: scaleX(2);
+    border-radius: 5px;
 }
 .box:hover .scale-y{
     /* transform: scaleY(.5); */
     transform: scaleY(2);
+    border-radius: 5px;
 }
 .box:hover .scale-xy{
-    transform: scale(2);
+    /* transform: scale(2); */
+    scale: 2;
+    border-radius: 5px;
     /* transform: scale(2, 3); */
     /* transform: scale(1.5, 1.5); */
 }
@@ -78,19 +82,23 @@ header h1 a{
 .box:hover .skew-x{
     /* transform: skewX(20deg); */
     transform: skewX(-20deg);
+    border-radius: 5px;
 }
 .box:hover .skew-y{
     transform:skewY(30deg);
+    border-radius: 5px;
     /* transform: skewY(90deg); */
 }
 .box:hover .skew-xy{  
     /* transform: skew(30deg,20deg);   */
     transform:skew(50deg); 
+    border-radius: 5px;
     /* if the 2nd value is not assigned it will only work on x axis */
 }
 /* translate */
 .box:hover .translate-x{
     transform: translateX(2em);
+    border-radius: 5px;
     /* transform: translateX(60px);
     transform: translateX(-60px); */
 }
@@ -98,32 +106,40 @@ header h1 a{
     /* transform: translateY(2em); */
     /* transform: translateY(60px); */
     transform: translateY(-60px);
+    border-radius: 5px;
 }
 .box:hover .translate-xy{
-    transform: translate(60px, 40px);
+    /* transform: translate(60px, 40px); */
     transform: translate(2,2);
+    border-radius: 5px;
+    /* translate: 2; */
 }
 
 /* rotate */
 .box:hover .rotate-x{
+    border-radius: 5px;
     transform: rotateX(40deg);
     transform: perspective(500px) scaleZ(2) rotateX(45deg);
 
 }
 .box:hover .rotate-y{
+    border-radius: 5px;
     transform: rotateY(-40deg);  
     transform: perspective(500px) scaleZ(2) rotateY(45deg);
 
 }
 .box:hover .rotate-xy{
+    border-radius: 5px;
     transform: rotate(40deg);
     transform: rotate(270deg)
 }
 /* matrix */
 .box:hover .matrix-2d{
+    border-radius: 5px;
     transform: matrix(1, -1, 0, 1, 0, 0);
 }
 .box:hover .matrix-3d{
+    border-radius: 5px;
     transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1);
 
 }

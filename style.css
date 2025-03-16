@@ -109,10 +109,10 @@ header h1 a{
     border-radius: 5px;
 }
 .box:hover .translate-xy{
-    /* transform: translate(60px, 40px); */
-    transform: translate(2,2);
+    transform: translate(60px, 40px);
+    /* transform: translate(2,2); */
     border-radius: 5px;
-    /* translate: 2; */
+    translate: 2;
 }
 
 /* rotate */
